@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  query-sqlserver:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "p55w0rd!"
+      MSSQL_PID: "Developer"
+    ports:
+      - "14341:1433"
+  command-sqlserver:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "p55w0rd!"
+      MSSQL_PID: "Developer"
+    ports:
+      - "14342:1433"
