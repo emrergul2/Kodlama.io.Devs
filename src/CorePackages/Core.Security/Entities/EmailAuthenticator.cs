@@ -14,7 +14,7 @@ public class EmailAuthenticator : Entity
     {
     }
 
-    public EmailAuthenticator(int id, int userId, string? activationKey, bool isVerified) : this()
+    public EmailAuthenticator(Guid id, int userId, string? activationKey, bool isVerified) : this()
     {
         Id = id;
         UserId = userId;

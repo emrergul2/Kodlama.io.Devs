@@ -14,7 +14,7 @@ public class UserOperationClaim : Entity
     {
     }
 
-    public UserOperationClaim(int id, int userId, int operationClaimId) : base(id)
+    public UserOperationClaim(Guid id, int userId, int operationClaimId) : base(id)
     {
         UserId = userId;
         OperationClaimId = operationClaimId;

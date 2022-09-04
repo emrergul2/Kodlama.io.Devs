@@ -14,7 +14,7 @@ public class OtpAuthenticator : Entity
     {
     }
 
-    public OtpAuthenticator(int id, int userId, byte[] secretKey, bool isVerified) : this()
+    public OtpAuthenticator(Guid id, int userId, byte[] secretKey, bool isVerified) : this()
     {
         Id = id;
         UserId = userId;
